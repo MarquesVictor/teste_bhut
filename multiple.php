@@ -12,15 +12,12 @@ class multipe
                     echo "BHUT<br>";
                 case (($i % 5) == 0):
                     echo 'IT<br>';
-                case (($i % 3) == 0):
-                    if (($i % 5) == 0) {
-                        echo 'BHUT TI<br>';
-                    }
+                case ($i % 3 == 0 and $i % 5 == 0):
+                    echo 'BHUT TI<br>';
             }
         }
     }
 }
-
 
 $result = new multipe();
 echo $result->mult();
